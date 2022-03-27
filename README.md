@@ -11,4 +11,7 @@ https://trello.com/invite/b/o3fgvIVa/ce1e2d23c7142f97ba239118617f6a2f/primera-fa
 Mockups.
 https://drive.google.com/drive/folders/19iCT46QRlWrFCw-nCDoG5qgcXiPTg08X?usp=sharing
 
+Licencia.
+licencia Creative Commons By – Sa
+
 
