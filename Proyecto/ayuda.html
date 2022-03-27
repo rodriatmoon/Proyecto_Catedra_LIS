@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/image-modal.css" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Inicio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- LOGO -->
+      <!-- Se muestra solo en pantallas pequeñas a la izquierda del menu -->
+      <div class="d-block d-sm-none d-sm-block d-md-block d-lg-none">
+        <img
+          src="img/logo-timeline-maker-menu2.png"
+          class="d-inline-block align-top"
+          alt="Logo Timeline Maker"
+        />
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="nav-principal">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Como Usar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crear.html">Crear</a>
+          </li>
+        </ul>
+        <!-- LOGO -->
+        <!-- Se muestra en pantallas grandes al centro del menu -->
+        <div class="d-none d-lg-block">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo-timeline-maker-menu.png"
+              class="d-inline-block align-top"
+              alt="Logo Timeline Maker"
+            />
+          </a>
+        </div>
+        <ul class="navbar-nav ml-auto" id="nav-principal">
+          <li class="nav-item">
+            <a class="nav-link" href="integrantes.html">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contactar</a>
+          </li>
+        </ul>
+
+        <!-- BUSCADOR -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+            id="txtbuscar"
+          />
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="button" id="btnBuscar">
+            Buscar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <hr/>
+    <br />
+    <!-- Modal-->
+    <div
+      class="modal fade bd-example-modal-xl"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="modal-img" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINER -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 align-self-center">
+          <h1 id="titulo1">¿Donde se crean las lineas de tiempo?</h1>
+          <p class="lead text-justify">
+            Ya dentro de la página principal damos Click en el botón de “Crear”
+            o al botón del slider “Crear Línea” este botón nos direccionara a la
+            página que nos permitirá crear, modificar y eliminar un evento.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 align-self-center mb-4 text-ceter">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="1"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/inicio.JPG" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 order-1 order-md-12 align-self-center">
+          <h1 id="titulo2" class="text-md-right text-left">
+            ¿Cómo se crea un evento?
+          </h1>
+          <p class="lead text-justify">
+            Después de ingresar a la página “Crear” solo se da click en el botón
+            “Añadir evento” en el que se desplegara una modal en el que pide
+            escribir un título y una descripción de lo que tratara la línea de
+            tiempo. En esta página se puede modificar los datos del evento,
+            eliminar evento y ver la línea de tiempo según el evento creado.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-12 order-md-1 align-self-center mb-4">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="2"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Crear evento.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 align-self-center">
+          <h1 id="titulo3">¿Cómo crear una línea de tiempo?</h1>
+          <p class="lead text-justify">
+            Después de haber creado el evento damos click en el botón “Ver
+            línea” encima del evento al que queramos ingresarle sucesos en la
+            línea de tiempo.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 align-self-center mb-4">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="3"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Ver-linea.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 order-1 order-md-12 align-self-center">
+          <h1 id="titulo4" class="text-md-right text-left">
+            ¿Cómo añadir un suceso en la línea de tiempo?
+          </h1>
+          <p class="lead text-justify">
+            Después de ingresar en la vista de línea de tiempo le damos al botón
+            añadir evento y se rellena el formulario que se muestra en una
+            ventana flotante y por ultimo se le da en agregar y se guardara.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-12 order-md-1 align-self-center mb-4">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="4"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Agregar-Suceso.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 align-self-center">
+          <h1 id="titulo1">¿Cómo modificar un suceso de línea de tiempo?</h1>
+          <p class="lead text-justify">
+            Le damos al botón “Modificar evento” que esta sobre el suceso que
+            queramos editar, luego saldrá una ventana modal con todos los datos
+            escritos y se pueden sobrescribir los nuevos datos.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 align-self-center mb-4 text-ceter">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="5"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Modificar-suceso.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 order-1 order-md-12 align-self-center">
+          <h1 id="titulo4" class="text-md-right text-left">
+            ¿Cómo eliminar un suceso de línea de tiempo?
+          </h1>
+          <p class="lead text-justify">
+            Se pueden eliminar por medio del botón “Eliminar evento” que esta
+            sobre cada suceso y solo se elige el botón que esta sobre el suceso
+            que se desea eliminar.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-12 order-md-1 align-self-center mb-4">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="6"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Eliminar-suceso.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 align-self-center">
+          <h1 id="titulo1">¿Cómo modificar un Evento?</h1>
+          <p class="lead text-justify">
+            Se le da click al botón “Modificar” que se encuentra sobre cada
+            evento creado, solo se le da click al botón que esta sobre el evento
+            que se desea modificar y se muestra una ventana modal con los datos
+            en el que se puede modificar los datos escritos.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 align-self-center mb-4 text-ceter">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="7"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Modificar-evento.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
+        <div class="col-12 col-md-8 mb-4 order-1 order-md-12 align-self-center">
+          <h1 id="titulo4" class="text-md-right text-left">
+            ¿Cómo eliminar un Evento?
+          </h1>
+          <p class="lead text-justify">
+            Se le da click al botón “Eliminar” que se encuentra sobre cada
+            evento creado, solo se le da click al botón que esta sobre el evento
+            que se desea eliminar y se eliminaran todos los datos que contiene
+            ese evento hasta los de la línea de tiempo que contiene.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-12 order-md-1 align-self-center mb-4">
+          <button
+            type="button"
+            class="btn btn-link enlace"
+            value="8"
+            data-toggle="modal"
+            data-target=".bd-example-modal-xl"
+          >
+            <img src="img/Eliminar-evento.jpg" class="rounded imagen" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <script src="js/ayuda.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 text-center">
+            <img
+              src="img/logo-timelime-maker2.png"
+              alt="Logo La Liga Española"
+            />
+          </div>
+          <div class="col-md-5 ml-auto">
+            <nav class="navbar navbar-expand-lg" id="footer-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="crear.html">Linea de Tiempo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contacto.html">Contactar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ayuda</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/buscador.js"></script>
+</html>
