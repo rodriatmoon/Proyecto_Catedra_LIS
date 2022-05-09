@@ -6,7 +6,7 @@ Torres Rodríguez, Emerson Ernesto	  | TR172032
 Links:
 
 Trello.
-https://trello.com/invite/b/o3fgvIVa/ce1e2d23c7142f97ba239118617f6a2f/primera-fase
+https://trello.com/invite/b/7JHDPvRR/a4c7dd84ecd30ec70e88df1ed2217e71/segunda-fase
 
 Mockups.
 https://drive.google.com/drive/folders/19iCT46QRlWrFCw-nCDoG5qgcXiPTg08X?usp=sharing
